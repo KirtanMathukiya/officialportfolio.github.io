@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.addImg{
+  background-image: url("button.png");
+  background-size: cover; /* This property ensures the background image covers the entire container */
+  background-position: 50%; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar {
+    background-color: #0e1011;
+    padding: 15px 0;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #2ecc71; /* Emerald Green */
+}
+
+.hero-section .container{
+    padding: 50px 0;
+}
+
+.hero-section {
+    /* background-image: linear-gradient(to right, #3498db, #8e44ad);  Gradient from Blue to Purple */
+    background-image: linear-gradient(to right, #0e1011, #8e44ad); /* Belize Hole */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 65px 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeInDownAnimation 5s;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeInUpAnimation 5s;
+}
+
+@keyframes fadeInDownAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section {
+    /* background-image: linear-gradient(to right, #8e44ad, #3498db);  Gradient from Blue to Purple */
+    background-image: linear-gradient(to left, #0e1011, #8e44ad); /* Belize Hole */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 30px 0;
+    /*background-color: #ecf0f1;  Clouds */
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: animate__animated animate__fadeIn 1s;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    animation: fadeInUpAnimation 5s;
+}
+
+.about-section .section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeInDownAnimation 1s;
+}
+
+.about-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    animation: fadeInLeftAnimation 1s;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    animation: fadeInRightAnimation 1s;
+}
+
+.project-section {
+    padding: 30px 0;
+    background-color: #34495e; /* Wet Asphalt */
+    color: #ecf0f1; /* Clouds */
+}
+
+.project-card {
+    transition: transform 0.3s;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: animate__animated animate__fadeInUp 1s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    animation: animate__animated animate__rubberBand 0.8s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-card .card-body {
+    padding: 20px;
+}
+
+.project-card h5 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* Clouds */
+}
+
+.project-card p {
+    color: #bdc3c7; /* Silver Sand */
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-section {
+    background-image: linear-gradient(to right, #0e1011, #8e44ad); /* Belize Hole */
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    animation: animate__animated animate__fadeIn 1s;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    animation: animate__animated animate__fadeIn 1s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ffffff;
+}
+
+.contact-form button {
+    background-color: #e74c3c; /* Alizarin */
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: animate__animated animate__fadeIn 1s;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b; /* Pomegranate */
+}
+
+.active-section {
+    border-bottom: 3px solid #ecf0f1; /* Clouds */
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Back to Top Button */
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #050606;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#back-to-top-btn:hover {
+    background-color: #555;
+}
+
+/* Show the button when page is scrolled down */
+@media screen and (max-height: 600px) {
+    #back-to-top-btn {
+        display: block;
+    }
+}
